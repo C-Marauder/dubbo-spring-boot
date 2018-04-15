@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/consumer" />
             <option value="$PROJECT_DIR$/domain" />
             <option value="$PROJECT_DIR$/dubbo" />
+            <option value="$PROJECT_DIR$/myBatis" />
             <option value="$PROJECT_DIR$/producer" />
           </set>
         </option>

@@ -1,3 +1,5 @@
 package com.xqy.www.domain.dao
 
-data class Boy(var interfacename: String, var name: String)
+import java.io.Serializable
+
+data class Boy(var interfacename: String, var name: String):Serializable

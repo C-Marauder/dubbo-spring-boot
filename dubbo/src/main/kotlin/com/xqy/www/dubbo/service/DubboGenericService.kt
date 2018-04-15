@@ -2,6 +2,7 @@ package com.xqy.www.dubbo.service
 
 import com.alibaba.dubbo.config.spring.ServiceBean
 import com.alibaba.dubbo.rpc.service.GenericService
+import com.xqy.www.dubbo.manager.DubboServiceManager
 import com.xqy.www.dubbo.utils.printMessage
 import org.springframework.context.ApplicationContextAware
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
@@ -17,18 +18,17 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @create: 2018-04-14 15:27
  **/
 class DubboGenericService:GenericService {
-    private val context:AnnotationConfigApplicationContext by lazy {
-        AnnotationConfigApplicationContext { refresh() }
-    }
+
     override fun `$invoke`(method: String?, parameterTypes: Array<out String>?, args: Array<out Any>?): Any {
-        if (method== null||args == null){
-            return "接口名或参数为空"
+        var result :Any ?
+        try {
+            result = DubboServiceManager.getService(method!!).execute(args!![0] as HashMap<String, Any>)
+
+        }catch (e:Exception){
+            result = "参数不正确"
+            e.printStackTrace()
         }
-        val map = context.getBeansOfType(SuperService::class.java)
-        map.forEach { t, u ->
-            printMessage("$t-----$u")
-        }
-        val service = context.getBean(method) as SuperService<*>
-        return service.execute(args[0] as HashMap<String, Any>)!!
+
+        return result!!
     }
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/beauty?characterEncoding=utf-8"
+                        userId="root"
+                        password="112358">
+        </jdbcConnection>
+
+        <!-- 生成实体类 -->
+        <javaModelGenerator targetPackage="com.xqy.www.mybatis.dao" targetProject="/Users/xieqiongyu/Documents/GitHub/dubbo-spring-boot/myBatis/src/main/java"/>
+
+        <!-- 生成mapper对应的xml文件，可选生成 -->
+        <sqlMapGenerator targetPackage="mapper"  targetProject="/Users/xieqiongyu/Documents/GitHub/dubbo-spring-boot/myBatis/src/main/resources"/>
+
+        <!-- 生成mapper -->
+        <javaClientGenerator targetPackage="com.xqy.www.producer.mapper" targetProject="/Users/xieqiongyu/Documents/GitHub/dubbo-spring-boot/producer/src/main/kotlin" type="XMLMAPPER" />
+
+        <!-- 指定%所有表包含一个都有一个id自增的主键 -->
+        <!-- <table tableName="%" >
+          <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table> -->
+
+        <!--对应数据库表Test1，指定生成的名字为Test，例如TestMapper.java,Test.java,Test,TestMapper.xml-->
+        <table tableName="%" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>

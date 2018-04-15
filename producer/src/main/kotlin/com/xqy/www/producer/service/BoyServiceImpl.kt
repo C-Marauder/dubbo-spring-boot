@@ -1,14 +1,21 @@
 package com.xqy.www.producer.service
 
-import com.xqy.www.domain.dao.Boy
+import com.alibaba.dubbo.config.annotation.Service
 import com.xqy.www.dubbo.service.SuperService
-import org.springframework.stereotype.Service
+import com.xqy.www.producer.dao.AppTab
+import com.xqy.www.producer.mapper.AppTabMapper
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
+import org.springframework.context.annotation.Lazy
+import tk.mybatis.mapper.common.Mapper
 
-@com.alibaba.dubbo.config.annotation.Service(interfaceClass = SuperService::class)
-class BoyServiceImpl : SuperService<Boy> {
-    override fun execute(param: HashMap<String,Any>): Boy {
+@Service(interfaceClass = SuperService::class)
+class BoyServiceImpl : SuperService<List<AppTab>> {
+    @Autowired
+    private lateinit var mapper: AppTabMapper
+    override fun execute(param: HashMap<String,Any>): List<AppTab> {
 
-        return Boy( param["name"] as String,"---")
+        return mapper.selectAll()
     }
 
 
