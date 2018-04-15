@@ -1,8 +1,9 @@
 package com.xqy.www.dubbo.config
 
-import com.alibaba.dubbo.common.utils.NetUtils.LOCALHOST
 import com.alibaba.dubbo.config.ApplicationConfig
 import com.alibaba.dubbo.config.RegistryConfig
+import com.xqy.www.dubbo.utils.LOCALHOST
+import com.xqy.www.dubbo.utils.PROCOTOL
 
 interface ConsumerConfiguration {
 
@@ -13,7 +14,7 @@ interface ConsumerConfiguration {
 
     //    @Bean("dubbo-register")
     fun getRegisterConfig(): RegistryConfig = RegistryConfig().apply {
-        protocol = "zookeeper"
+        protocol = PROCOTOL
         address = LOCALHOST
 
     }

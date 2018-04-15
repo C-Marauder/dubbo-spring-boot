@@ -19,4 +19,9 @@ class ClientApplicationConfiguration : ConsumerConfiguration {
     override fun getRegisterConfig(): RegistryConfig {
         return super.getRegisterConfig()
     }
+
+//    @Bean
+//    fun annotationDemoServiceConsumer(): AnnotationDemoServiceConsumer {
+//        return AnnotationDemoServiceConsumer()
+//    }
 }

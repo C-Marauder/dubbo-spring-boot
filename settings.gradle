@@ -4,3 +4,5 @@ include 'api'
 include 'dubbo'
 include 'domain'
 include 'consumer'
+include 'api'
+

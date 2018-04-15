@@ -6,6 +6,7 @@ import com.alibaba.dubbo.config.ProviderConfig
 import com.alibaba.dubbo.config.RegistryConfig
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan
 import com.xqy.www.dubbo.config.ProviderConfiguration
+import com.xqy.www.producer.service.BoyServiceImpl
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
@@ -27,8 +28,10 @@ class ProducerConfiguration : ProviderConfiguration {
         return super.getProtocolConfig()
     }
 
-    @Bean("dubbo-provider")
-    override fun providerConfig(): ProviderConfig {
-        return super.providerConfig()
-    }
+//    @Bean("dubbo-provider")
+//    override fun providerConfig(): ProviderConfig {
+//        return super.providerConfig()
+//    }
+//    @Bean
+//    fun getBoyService():BoyServiceImpl = BoyServiceImpl()
 }

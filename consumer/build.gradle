@@ -12,15 +12,16 @@ apply plugin: 'kotlin-spring'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-configurations {
-    compile.exclude module: 'org.apache.tomcat.embed'
-
-
-}
+//configurations {
+//    compile.exclude module: 'org.apache.tomcat.embed'
+//
+//
+//}
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
-    compile('org.springframework.boot:spring-boot-starter-web')
-    compile('com.fasterxml.jackson.module:jackson-module-kotlin')
-//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: spring_web_version
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('com.fasterxml.jackson.module:jackson-module-kotlin')
+    implementation group: 'org.apache.zookeeper', name: 'zookeeper', version: zookeeper_version, ext: 'pom'
+    implementation group: 'org.apache.curator', name: 'curator-framework', version: curator_framework_version
     implementation project(':dubbo')
 }
