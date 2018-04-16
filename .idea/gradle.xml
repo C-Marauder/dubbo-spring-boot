@@ -18,7 +18,6 @@
             <option value="$PROJECT_DIR$/producer" />
           </set>
         </option>
-        <option name="useAutoImport" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
