@@ -1,6 +1,6 @@
 package com.xqy.www.dubbo.utils
 
-const val LOCALHOST = "zookeeper://192.168.1.102:2181"
+const val LOCALHOST = "zookeeper://127.0.0.1:2181"
 const val PROCOTOL = "zookeeper"
 const val DUBBO_PORT = 20881
 const val TIME_OUT = 5000
