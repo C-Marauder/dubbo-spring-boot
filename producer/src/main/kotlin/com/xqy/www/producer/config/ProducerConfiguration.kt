@@ -5,14 +5,12 @@ import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan
 import com.xqy.www.dubbo.config.ProviderConfiguration
 import org.mybatis.spring.annotation.MapperScan
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 
 
 @Configuration
-@DubboComponentScan(basePackages = ["com.xqy.www.producer.service"] )
-
-//@MapperScan(basePackages = ["com.xqy.www.mybatis.mapper"])
-
+@ComponentScan(basePackages = ["com.xqy.www.producer.service"] )
 class ProducerConfiguration : ProviderConfiguration {
     @Bean("dubbo-annotation-provider")
     override fun getApplicationConfig(): ApplicationConfig {

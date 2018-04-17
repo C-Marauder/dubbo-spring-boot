@@ -1,4 +1,4 @@
-package com.xqy.www.domain.dao
+package com.xqy.www.domain
 
 import java.io.Serializable
 

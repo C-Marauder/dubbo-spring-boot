@@ -17,7 +17,7 @@
 
 dependencies {
     implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
-
+    compile 'com.alibaba.boot:dubbo-spring-boot-starter:0.1.0'
     compile group: 'com.alibaba', name: 'dubbo', version: dubbo_version
 
 
