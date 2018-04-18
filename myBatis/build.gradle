@@ -1,58 +1,6 @@
-configurations {
-    mybatisGenerator
-}
-def getDbProperties = {
-    def properties = new Properties()
-    file("src/main/resources/config.properties").withInputStream { inputStream ->
-        properties.load(inputStream)
-    }
-    properties
-}
-task mybatisGenerate << {
-    def properties = getDbProperties()
-    ant.properties['targetProject'] = projectDir.path
-    ant.properties['driverClass'] = properties.getProperty("jdbc.driverClassName")
-    ant.properties['connectionURL'] = properties.getProperty("jdbc.url")
-    ant.properties['userId'] = properties.getProperty("jdbc.username")
-    ant.properties['password'] = properties.getProperty("jdbc.password")
-    ant.properties['src_main_java'] = sourceSets.main.java.srcDirs[0].path
-    ant.properties['src_main_resources'] = sourceSets.main.resources.srcDirs[0].path
-    ant.properties['modelPackage'] = this.modelPackage
-    ant.properties['mapperPackage'] = this.mapperPackage
-    ant.properties['sqlMapperPackage'] = this.sqlMapperPackage
-    ant.taskdef(
-            name: 'mbgenerator',
-            classname: 'org.mybatis.generator.ant.GeneratorAntTask',
-            classpath: configurations.mybatisGenerator.asPath
-    )
-    ant.mbgenerator(overwrite: true,
-            configfile: 'src/main/resources/generatorConfig.xml', verbose: true) {
-        propertyset {
-            propertyref(name: 'targetProject')
-            propertyref(name: 'userId')
-            propertyref(name: 'driverClass')
-            propertyref(name: 'connectionURL')
-            propertyref(name: 'password')
-            propertyref(name: 'src_main_java')
-            propertyref(name: 'src_main_resources')
-            propertyref(name: 'modelPackage')
-            propertyref(name: 'mapperPackage')
-            propertyref(name: 'sqlMapperPackage')
-        }
-    }
-}
 
-
-//mybatisGenerator {
-//    verbose = true
-//    configFile = 'src/main/resources/generatorConfig.xml'
-//}
 dependencies {
-//    mybatisGenerator group: 'org.mybatis.generator', name: 'mybatis-generator-core', version: '1.3.6'
-    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.28'
 
     compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.2'
-    compile group: 'tk.mybatis', name: 'mapper', version: '4.0.1'
-    compile group: 'tk.mybatis', name: 'mapper-spring-boot-starter', version: '2.0.1'
     runtime ('mysql:mysql-connector-java')
 }

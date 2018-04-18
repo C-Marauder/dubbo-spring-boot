@@ -8,6 +8,8 @@
       <module name="consumer_test" target="1.8" />
       <module name="domain_main" target="1.8" />
       <module name="domain_test" target="1.8" />
+      <module name="dubbo-spring-boot-domain_main" target="1.8" />
+      <module name="dubbo-spring-boot-domain_test" target="1.8" />
       <module name="dubbo-spring-boot_main" target="1.8" />
       <module name="dubbo-spring-boot_test" target="1.8" />
       <module name="dubbo_main" target="1.8" />

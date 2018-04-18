@@ -16,12 +16,7 @@ private val logger: Logger by lazy {
 }
 
 fun main(args: Array<String>) {
-    val context = AnnotationConfigApplicationContext().apply {
-        register(ClientApplicationConfiguration::class.java)
-        refresh()
-    }
-    val map = context.getBeansOfType(SuperService::class.java)
-    logger.debug(map.toString())
-    logger.debug("consumer 服务启动 ^_^")
     runApplication<ClientApplication>(*args)
+    logger.debug("consumer 服务启动 ^_^")
+
 }
