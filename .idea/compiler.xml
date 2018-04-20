@@ -4,10 +4,18 @@
     <bytecodeTargetLevel>
       <module name="api_main" target="1.8" />
       <module name="api_test" target="1.8" />
+      <module name="commom_main" target="1.8" />
+      <module name="commom_test" target="1.8" />
       <module name="consumer_main" target="1.8" />
       <module name="consumer_test" target="1.8" />
       <module name="domain_main" target="1.8" />
       <module name="domain_test" target="1.8" />
+      <module name="du_main" target="1.8" />
+      <module name="du_test" target="1.8" />
+      <module name="dubbo-consumer_main" target="1.8" />
+      <module name="dubbo-consumer_test" target="1.8" />
+      <module name="dubbo-provider_main" target="1.8" />
+      <module name="dubbo-provider_test" target="1.8" />
       <module name="dubbo-spring-boot-domain_main" target="1.8" />
       <module name="dubbo-spring-boot-domain_test" target="1.8" />
       <module name="dubbo-spring-boot_main" target="1.8" />
@@ -18,6 +26,8 @@
       <module name="myBatis_test" target="1.8" />
       <module name="producer_main" target="1.8" />
       <module name="producer_test" target="1.8" />
+      <module name="rocketMQ_main" target="1.8" />
+      <module name="rocketMQ_test" target="1.8" />
       <module name="web_main" target="1.8" />
       <module name="web_test" target="1.8" />
     </bytecodeTargetLevel>

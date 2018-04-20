@@ -1,12 +1,9 @@
 package com.xqy.www.client
 
-import com.xqy.www.client.config.ClientApplicationConfiguration
-import com.xqy.www.dubbo.service.SuperService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 @SpringBootApplication
 class ClientApplication
