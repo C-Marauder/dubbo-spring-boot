@@ -6,12 +6,13 @@ buildscript {
         dubbo_version = '2.6.1'
         gson_version = '2.8.2'
         zookeeper_version = '3.4.11'
+        rocketmq_version = '4.2.0'
     }
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-noarg:$kotlinVersion")
+//        classpath("org.jetbrains.kotlin:kotlin-noarg:$kotlinVersion")
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
         classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
@@ -41,6 +42,7 @@ subprojects {
     }
 
     dependencies {
+
         compile('org.springframework.boot:spring-boot-starter')
         compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
         compile("org.jetbrains.kotlin:kotlin-reflect")

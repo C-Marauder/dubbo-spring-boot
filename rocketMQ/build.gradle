@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(':commom')
+
+//    compile 'io.netty:netty-tcnative:1.1.33.Fork22:${os.detected.classifier}'
+    compile group: 'org.apache.rocketmq', name: 'rocketmq-client', version: rocketmq_version
+//    compile group: 'org.apache.rocketmq', name: 'rocketmq-common', version: rocketmq_version
+
+}

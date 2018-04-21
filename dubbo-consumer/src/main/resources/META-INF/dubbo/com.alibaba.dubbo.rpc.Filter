@@ -1,0 +1,1 @@
+dubboTraceFilter=com.xqy.www.dubboconsumer.filter.DubboTraceFilter

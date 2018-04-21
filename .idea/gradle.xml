@@ -11,11 +11,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/commom" />
             <option value="$PROJECT_DIR$/consumer" />
             <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/dubbo" />
+            <option value="$PROJECT_DIR$/dubbo-consumer" />
+            <option value="$PROJECT_DIR$/dubbo-provider" />
             <option value="$PROJECT_DIR$/myBatis" />
             <option value="$PROJECT_DIR$/producer" />
+            <option value="$PROJECT_DIR$/rocketMQ" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

@@ -1,18 +1,17 @@
 package com.xqy.www.client.controller
 
-import com.xqy.www.dubbo.controller.DubboController
-import com.xqy.www.dubbo.param.JsonResult
-import com.xqy.www.dubbo.utils.printMessage
-import org.springframework.boot.jackson.JsonObjectSerializer
-import org.springframework.stereotype.Controller
-import org.springframework.web.bind.annotation.*
+import com.xqy.www.dubboconsumer.DubboController
+import com.xqy.www.dubboconsumer.json.JsonResult
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class ApplicationController : DubboController {
 
     @RequestMapping("/action",method = [(RequestMethod.POST)])
-    override fun dispatchApplicationService(@RequestBody param: HashMap<String, Any>): JsonResult {
-        printMessage(param.keys.toString())
+    override fun dispatchApplicationService(@RequestBody param: HashMap<String, String>): JsonResult {
         return super.dispatchApplicationService(param)
     }
     @RequestMapping("/message")
