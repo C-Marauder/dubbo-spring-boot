@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    id: dubbo-consumer
+    name: dubbo-consumer
+  registry:
+      id: dubbo-register
+      address: "zookeeper://127.0.0.1:2181"
+      protocol: "zookeeper"
+  consumer:
+    filter: dubboTraceFilter
+

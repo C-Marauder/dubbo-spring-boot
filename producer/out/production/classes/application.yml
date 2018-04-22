@@ -13,36 +13,10 @@
 #  mappers: com.xqy.www.mybatis.mapper
 ##  identity: mysqlspring:
 # Base packages to scan Dubbo Components (e.g., @Service, @Reference)
-#dubbo:
-#  scan:
-#    base-packages: com.xqy.www.producer.service
-#  application:
-#    id: dubbo-provider
-#    name: dubbo-provider
-#  protocol:
-#    id: dubbo
-#    name: dubbo
-#    port: 20881
-#  registry:
-#    id: dubbo-register
-#    address: "zookeeper://127.0.0.1:2181"
-#    protocol: "zookeeper"
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/sys?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: qq112358
-# Dubbo Config properties
-## ApplicationConfig Bean
-#dubbo.application.id = dubbo-provider-demo
-#dubbo.application.name = dubbo-provider-demo
-
-## ProtocolConfig Bean
-#dubbo.protocol.id = dubbo
-#dubbo.protocol.name = dubbo
-#dubbo.protocol.port = 12345
-
-## RegistryConfig Bean
-#dubbo.registry.id = my-registry
-#dubbo.registry.address = N/A

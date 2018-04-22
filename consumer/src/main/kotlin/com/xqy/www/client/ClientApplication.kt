@@ -1,19 +1,17 @@
 package com.xqy.www.client
-
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
+import org.apache.zookeeper.ZooKeeperMain.printMessage
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.context.annotation.ComponentScan
 
 @SpringBootApplication
+@ComponentScan("com.xqy.www.dubboconsumer","com.xqy.www.client.controller","com.xqy.www.rocketmq.consumer")
 class ClientApplication
 
-private val logger: Logger by lazy {
-    LoggerFactory.getLogger(ClientApplication::class.java)
-}
 
 fun main(args: Array<String>) {
     runApplication<ClientApplication>(*args)
-    logger.debug("consumer 服务启动 ^_^")
+    printMessage("consumer 服务启动 ^_^")
+//
 
 }

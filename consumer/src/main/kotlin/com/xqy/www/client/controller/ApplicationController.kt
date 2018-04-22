@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class ApplicationController : DubboController {
+class ApplicationController : DubboController() {
 
     @RequestMapping("/action",method = [(RequestMethod.POST)])
     override fun dispatchApplicationService(@RequestBody param: HashMap<String, String>): JsonResult {
