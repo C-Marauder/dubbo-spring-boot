@@ -10,14 +10,18 @@ import com.xqy.www.commom.CORE_SERVICE
 import com.xqy.www.commom.LOCALHOST
 import com.xqy.www.commom.PROCOTOL
 import com.xqy.www.commom.VERSION
+import com.xqy.www.commom.utils.printMessage
 import com.xqy.www.dubboconsumer.constant.APPLICATION_NAME
+import org.springframework.stereotype.Component
+import javax.annotation.PostConstruct
 
-object DubboGenericService {
+@Component
+class DubboGenericService {
 
-    private var reference :ReferenceConfig<GenericService>?=null
-
-    fun getGenericService():GenericService{
-        if (reference == null){
+    private var reference: ReferenceConfig<GenericService>? = null
+    @PostConstruct
+    fun init() {
+        if (reference == null) {
             reference = ReferenceConfig()
             reference!!.application = ApplicationConfig().apply {
                 name = APPLICATION_NAME
@@ -28,16 +32,19 @@ object DubboGenericService {
 
             }
             reference!!.consumer = ConsumerConfig().apply {
-//                filter = "dubboTraceFilter"
+                //                filter = "dubboTraceFilter"
                 isGeneric = true
             }
             reference!!.`interface` = CORE_SERVICE //弱类型接口名
             reference!!.version = VERSION
             reference!!.isGeneric = true //声明为泛化接口
-            return reference!!.get()
-        }else{
-            val cache = ReferenceConfigCache.getCache()
-            return cache.get(reference)
+
+            printMessage("服务消费创建成功")
         }
+    }
+
+    fun getGenericService(): GenericService {
+        val cache = ReferenceConfigCache.getCache()
+        return cache.get(reference) ?: reference!!.get()
     }
 }

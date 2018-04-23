@@ -7,14 +7,17 @@ import com.xqy.www.commom.STATUS_SUCCESS
 import com.xqy.www.dubboconsumer.constant.INTERFACE_NAME
 import com.xqy.www.dubboconsumer.json.JsonResult
 import com.xqy.www.dubboconsumer.service.DubboGenericService
+import org.springframework.beans.factory.annotation.Autowired
 
 
-interface DubboController {
+abstract class DubboController {
 
-    fun dispatchApplicationService(param: HashMap<String, String>): JsonResult =
+    @Autowired
+    private lateinit var dubboGenericService: DubboGenericService
+    open fun dispatchApplicationService(param: HashMap<String, String>): JsonResult =
         JsonResult().apply {
             try {
-                val genericService= DubboGenericService.getGenericService()
+                val genericService= dubboGenericService.getGenericService()
                 val result = genericService.`$invoke`(param[INTERFACE_NAME] as String, arrayOf("java.util.Map"), arrayOf(param))
                 if (result != null) {
                     data = result

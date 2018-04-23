@@ -1,6 +1,5 @@
 package com.xqy.www.dubboprovider.manager
 
-import com.xqy.www.commom.utils.printMessage
 import com.xqy.www.dubboprovider.api.CoreService
 import org.springframework.beans.factory.InitializingBean
 import org.springframework.context.ApplicationContext
@@ -23,7 +22,6 @@ class DubboServiceManager:InitializingBean,ApplicationContextAware{
     }
 
     override fun afterPropertiesSet() {
-        printMessage("DubboServiceManager:-----afterPropertiesSet")
         val services = applicationContext.getBeansOfType(CoreService::class.java)
         services.forEach { t, u ->
             serviceImplMap[t] = u
