@@ -2,173 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc07d67-8043-4579-b864-1e20be02ee1a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/listener/MQMessageListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_actuator_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_boot_dubbo_spring_boot_starter_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_dubbo_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_fastjson_1_2_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_kotlin_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_2_7_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_3_10_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_all_4_1_23_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jline_jline_0_9_94.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_client_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_client_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_framework_2_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_curator_curator_framework_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_rocketmq_rocketmq_client_4_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_rocketmq_rocketmq_common_4_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_rocketmq_rocketmq_remoting_4_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_yetus_audience_annotations_0_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_zookeeper_zookeeper_3_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_zookeeper_zookeeper_3_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_zookeeper_zookeeper_pom_3_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_netty_netty_3_2_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_2_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_2_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/GitHub-dubbo-spring-boot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/dubbo-spring-boot-api_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/api/dubbo-spring-boot-api_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/commom.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/commom/commom_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/commom/commom_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/commom/commom_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/commom/commom_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/consumer/consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/consumer/consumer_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/consumer/consumer_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/consumer/consumer_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/consumer/consumer_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/consumer/dubbo-spring-boot-consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/consumer/dubbo-spring-boot-consumer_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/consumer/dubbo-spring-boot-consumer_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/dubbo-spring-boot-domain.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/dubbo-spring-boot-domain_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/dubbo-spring-boot-domain_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo-consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo-consumer/dubbo-consumer_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dubbo-consumer/dubbo-consumer_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo-consumer/dubbo-consumer_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dubbo-consumer/dubbo-consumer_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo-provider/dubbo-provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dubbo-provider/dubbo-provider_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo-provider/dubbo-provider_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dubbo-provider/dubbo-provider_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo-spring-boot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo/dubbo-spring-boot-dubbo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo/dubbo-spring-boot-dubbo_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo/dubbo-spring-boot-dubbo_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dubbo/dubbo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/myBatis/dubbo-spring-boot-myBatis_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/myBatis/dubbo-spring-boot-myBatis_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/myBatis/myBatis.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/myBatis/myBatis_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/myBatis/myBatis_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/myBatis/myBatis_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/myBatis/myBatis_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/producer/dubbo-spring-boot-producer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/producer/dubbo-spring-boot-producer_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/producer/dubbo-spring-boot-producer_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/producer/producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/producer/producer_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/producer/producer_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/producer/producer_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/rocketMQ.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/rocketMQ/rocketMQ_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/rocketMQ/rocketMQ_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/rocketMQ/rocketMQ_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/rocketMQ/rocketMQ_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/out/production/classes/com/xqy/www/client/ClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/out/production/classes/com/xqy/www/client/ClientApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/out/production/classes/com/xqy/www/client/ClientApplicationKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/out/production/classes/com/xqy/www/client/ClientApplicationKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/out/production/classes/com/xqy/www/client/controller/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/out/production/classes/com/xqy/www/client/controller/ApplicationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/kotlin/com/xqy/www/client/ClientApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/kotlin/com/xqy/www/client/ClientApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/kotlin/com/xqy/www/client/controller/ApplicationController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/kotlin/com/xqy/www/client/controller/ApplicationController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/out/production/classes/com/xqy/www/dubboconsumer/DubboController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/out/production/classes/com/xqy/www/dubboconsumer/DubboController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/out/production/classes/com/xqy/www/dubboconsumer/service/DubboGenericService.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/out/production/classes/com/xqy/www/dubboconsumer/service/DubboGenericService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/kotlin/com/xqy/www/dubboconsumer/DubboController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/kotlin/com/xqy/www/dubboconsumer/DubboController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/kotlin/com/xqy/www/dubboconsumer/service/DubboGenericService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/kotlin/com/xqy/www/dubboconsumer/service/DubboGenericService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager$Companion$serviceImplMap$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager$Companion$serviceImplMap$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager$afterPropertiesSet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager$afterPropertiesSet$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/out/production/classes/com/xqy/www/dubboprovider/manager/DubboServiceManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/kotlin/com/xqy/www/dubboprovider/manager/DubboServiceManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/kotlin/com/xqy/www/dubboprovider/manager/DubboServiceManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBatis/out/production/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myBatis/out/production/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/out/production/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/out/production/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/out/production/classes/com/xqy/www/producer/ProducerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/producer/out/production/classes/com/xqy/www/producer/ProducerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/kotlin/com/xqy/www/producer/ProducerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/kotlin/com/xqy/www/producer/ProducerApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/constant/ConstantsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/constant/ConstantsKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/consumer/MQMessageConsumer$initMQConsumer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/consumer/MQMessageConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/consumer/MQMessageConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/producer/MQMessageProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rocketMQ/out/production/classes/com/xqy/www/rocketmq/producer/MQMessageProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/constant/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/constant/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/consumer/MQMessageConsumer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/consumer/MQMessageConsumer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/producer/MQMessageProducer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/producer/MQMessageProducer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -283,8 +117,8 @@
       <file leaf-file-name="Constants.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/constant/Constants.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -2978,15 +2812,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524324038483</updated>
-      <workItem from="1524324040095" duration="3538000" />
+      <workItem from="1524324040095" duration="3641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3538000" />
+    <option name="totallyTimeSpent" value="3641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -2999,7 +2834,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3438155" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3438155" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" weight="0.32809225" />
       <window_info anchor="right" id="Palette&#9;" />
@@ -3115,8 +2950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rocketMQ/src/main/kotlin/com/xqy/www/rocketmq/constant/Constants.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
