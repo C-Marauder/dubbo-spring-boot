@@ -17,8 +17,11 @@ class QuartzManager{
         jobDetailMap = hashMapOf()
         schedulerFactory = StdSchedulerFactory()
     }
-    private fun initJobDetail(name:String){
-        val jobDetail = JobBuilder.newJob(ScheduledTask::class.java).withIdentity(name).build()
+    private fun initJobDetail(name:String,jobDataMap:(jobDataMap:JobDataMap)->JobDataMap){
+        val jobDetail = JobBuilder.newJob(ScheduledTask::class.java)
+                .withIdentity(name)
+                .setJobData(jobDataMap(JobDataMap()))
+                .build()
         jobDetailMap[name] = jobDetail
     }
     private fun initSimpleTrigger(name:String,simpleScheduleType:(simpleScheduleBuilder:SimpleScheduleBuilder)->SimpleScheduleBuilder ){
@@ -29,10 +32,10 @@ class QuartzManager{
 
     }
 
-    fun executeJob(name: String,simpleScheduleType:(simpleScheduleBuilder:SimpleScheduleBuilder)->SimpleScheduleBuilder){
+    fun executeJob(name: String,jobDataMap:(jobDataMap:JobDataMap)->JobDataMap,simpleScheduleType:(simpleScheduleBuilder:SimpleScheduleBuilder)->SimpleScheduleBuilder){
         val jobDetail = jobDetailMap[name]
         if (jobDetail == null){
-            initJobDetail(name)
+            initJobDetail(name,jobDataMap)
         }
         val trigger = triggerMap[name]
         if (trigger == null){

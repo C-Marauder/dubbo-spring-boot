@@ -1,4 +1,4 @@
-package com.xqy.www.api.task
+package com.xqy.www.api.service
 
 import com.xqy.www.dubboprovider.api.CoreService
 import com.xqy.www.task.manager.QuartzManager
@@ -12,6 +12,9 @@ class SubscriptionServiceImpl:CoreService<String> {
     override fun execute(param: HashMap<String, String>): String {
         val name = param["name"]
         quartzManager.executeJob(name!!,{
+            jobDataMap ->  jobDataMap["name"] = name
+            jobDataMap
+        },{
             it.withIntervalInSeconds(3).repeatForever()
         })
         return "成功"

@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/myBatis" />
             <option value="$PROJECT_DIR$/producer" />
             <option value="$PROJECT_DIR$/rocketMQ" />
+            <option value="$PROJECT_DIR$/task" />
           </set>
         </option>
       </GradleProjectSettings>
