@@ -1,0 +1,10 @@
+
+
+
+dependencies {
+    implementation project(':commom')
+    compile ('org.springframework.boot:spring-boot-starter-quartz:2.0.1.RELEASE'){
+        exclude module:'spring-boot-starter'
+    }
+
+}

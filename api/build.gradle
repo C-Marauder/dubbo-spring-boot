@@ -4,4 +4,5 @@ dependencies {
     compile project(':rocketMQ')
     compile project(':dubbo-provider')
     compile project(':myBatis')
+    compile project(':task')
 }

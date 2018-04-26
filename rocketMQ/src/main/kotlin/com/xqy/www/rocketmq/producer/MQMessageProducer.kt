@@ -33,7 +33,7 @@ class MQMessageProducer{
             mqProducer.start()
             val message = Message("test","haahh","我是小辉辉".toByteArray(Charset.forName(RemotingHelper.DEFAULT_CHARSET)))
 //        message.delayTimeLevel = 3
-            val result = mqProducer.send(message,object :SendCallback{
+            mqProducer.send(message,object :SendCallback{
                 override fun onSuccess(sendResult: SendResult?) {
                     printMessage(sendResult!!.msgId+sendResult.sendStatus)
                 }
@@ -57,7 +57,7 @@ class MQMessageProducer{
     fun pushMessage(topic:String,title:String,body:String):MessageResult{
         val message = Message("test",title,body.toByteArray(Charset.forName(RemotingHelper.DEFAULT_CHARSET)))
 //        message.delayTimeLevel = 3
-        val result = mqProducer.send(message,object :SendCallback{
+        mqProducer.send(message,object :SendCallback{
             override fun onSuccess(sendResult: SendResult?) {
                 printMessage(sendResult!!.msgId+sendResult.sendStatus)
             }
