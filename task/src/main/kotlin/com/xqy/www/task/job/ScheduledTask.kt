@@ -1,6 +1,7 @@
 package com.xqy.www.task.job
 
 import com.xqy.www.commom.utils.printMessage
+import com.xqy.www.task.constant.TASK_SERVICE_NAME
 import com.xqy.www.task.service.ScheduledTaskService
 import org.quartz.Job
 import org.quartz.JobExecutionContext
@@ -20,18 +21,20 @@ class  ScheduledTask :Job, ApplicationContextAware {
 
     }
     override fun setApplicationContext(applicationContext: ApplicationContext) {
-        printMessage("初始化完成")
         ScheduledTask.applicationContext = applicationContext
     }
 
     override fun execute(context: JobExecutionContext?) {
-        val name = context!!.mergedJobDataMap.getString("name")
-        ScheduledTask.applicationContext.getBean(name,ScheduledTaskService::class.java).executeTask(name)
-//        printMessage("${Date()}")
+        try {
+            val name = context!!.mergedJobDataMap.getString(TASK_SERVICE_NAME)
+            ScheduledTask.applicationContext.getBean(name,ScheduledTaskService::class.java).executeTask(name)
+
+        }catch (e:Exception){
+            printMessage("无该任务服务")
+
+        }
+
     }
 
-//    @Scheduled(fixedDelay = 1000)
-//    fun executeTask(){
-//        printMessage("执行任务: ${Date()}")
-//    }
+
 }
